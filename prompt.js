@@ -28,6 +28,11 @@ const prompt = require('prompt-sync')();
                        console.log(`resultat : ${num1 / num2}`);
                    }
                    break;
+                   case '^':
+                    num1 = prompt("Entrez un nombre : ");
+                    num2 = prompt("Entrez un autre nombre : ");
+                    console.log(`resultat : ${Math.pow(num1, num2)}`);
+                    break;
                 default:
                     console.log("Opérateur invalide !");
                 }
