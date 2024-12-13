@@ -19,6 +19,15 @@ const prompt = require('prompt-sync')();
                 num2 = prompt("Entrez un autre nombre : ");
                 console.log(`resultat : ${num1 * num2}`);
                 break;
+                case '/':
+                    num1 = prompt("Entrez un nombre : ");
+                    num2 = prompt("Entrez un autre nombre : ");
+                   if (num2 === 0) {
+                       console.log("Erreur wow ");
+                   } else {
+                       console.log(`resultat : ${num1 / num2}`);
+                   }
+                   break;
                 default:
                     console.log("Opérateur invalide !");
                 }
