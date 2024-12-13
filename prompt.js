@@ -41,6 +41,11 @@ const prompt = require('prompt-sync')();
                     console.log(`resultat : ${Math.sqrt(num1)}`);
                 }
                 break;
+                case '!': 
+                 num1 = prompt("Entrez un nombre : ");
+                 num1 = parseInt(num1);
+                console.log(`Resultat : ${factoriel(num1)}`);
+                break;
                 default:
                     console.log("Opérateur invalide !");
                 }
