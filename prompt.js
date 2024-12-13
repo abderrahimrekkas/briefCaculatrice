@@ -33,6 +33,14 @@ const prompt = require('prompt-sync')();
                     num2 = prompt("Entrez un autre nombre : ");
                     console.log(`resultat : ${Math.pow(num1, num2)}`);
                     break;
+                    case '>':
+                num1 = prompt("Entrez un nombre : ");
+                if(num1 < 0){
+                    console.log("Erreur");
+                }else {
+                    console.log(`resultat : ${Math.sqrt(num1)}`);
+                }
+                break;
                 default:
                     console.log("Opérateur invalide !");
                 }
